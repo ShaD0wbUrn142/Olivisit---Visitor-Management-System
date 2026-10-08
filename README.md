@@ -2,7 +2,7 @@
 ## About
 TODO
 
-Project Documentation here: https://github.com/ShaD0wbUrn142/Olivisit---Visitor-Management-System/blob/a88f9a3e1b0ae04c9f7e794264fab634daa8a6da/project-documentation.md
+Project Documentation here: [https://github.com/ShaD0wbUrn142/Olivisit---Visitor-Management-System/blob/a88f9a3e1b0ae04c9f7e794264fab634daa8a6da/project-documentation.md](https://github.com/ShaD0wbUrn142/Olivisit---Visitor-Management-System/blob/main/project-documentation.md)
 
 ## Why the project exists
 Paper is hard to manage; a management system is easier to use to keep track of visitors. Improves security for the organisation by having an easy way to look up who visited the building.
