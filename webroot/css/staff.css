@@ -1,0 +1,613 @@
+/* =====================================
+   GLOBAL SETTINGS
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f1f5f9;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #334155;
+    line-height: 1.6;
+}
+
+/* =====================================
+   DARK MODE
+===================================== */
+
+.dark-mode-body {
+    background-color: #334155;
+    color: #f1f5f9;
+}
+
+/* Cards */
+.dark-mode-body .edit-org-details,
+.dark-mode-body .edit-rules,
+.dark-mode-body .view-visitors,
+.dark-mode-body .edit-visitor {
+    background: #1e293b;
+    color: #f1f5f9;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Headings */
+.dark-mode-body h1,
+.dark-mode-body h2,
+.dark-mode-body label,
+.dark-mode-body p {
+    color: #f1f5f9;
+}
+
+/* Page header */
+.dark-mode-body .page-header h1,
+.dark-mode-body .page-header p,
+.dark-mode-body .page-header b {
+    color: #f1f5f9;
+}
+
+.dark-mode-body .dropdown-content {
+    background: #1e293b;
+}
+
+/* Organisation view card */
+.dark-mode-body .organisation-view,
+.dark-mode-body .table-card,
+.dark-mode-body .table-card h3 {
+    background: #1e293b;
+    color: #f1f5f9;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Card headers */
+.dark-mode-body .view-visitors-header {
+    background: #1e293b;
+}
+
+/* Table rows */
+.dark-mode-body .visitor-table tbody tr {
+    border-bottom: 1px solid #475569;
+}
+
+.dark-mode-body .visitor-table tbody tr:nth-child(even) {
+    background: #1e293b;
+    color: #fff;
+}
+
+.dark-mode-body .visitor-table tbody tr:nth-child(odd) {
+    background: #0f172a;
+    color: #fff;
+}
+
+.dark-mode-body .visitor-table tbody tr:hover {
+    background: #334155;
+    cursor: pointer;
+}
+
+.dark-mode-body .visitor-table tbody tr:last-child {
+    border-bottom: 2px solid #60a5fa;
+}
+
+/* Inputs */
+.dark-mode-body input,
+.dark-mode-body select,
+.dark-mode-body textarea {
+    background: #0f172a;
+    color: #f1f5f9;
+    border-color: #475569;
+}
+
+/* Optional navbar */
+.dark-mode-body .navbar {
+    background: #020617;
+}
+
+/* =====================================
+   NAVBAR
+===================================== */
+
+.navbar {
+    background: #0f172a;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+    padding: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+
+.nav-link:hover {
+    color: #60a5fa;
+}
+
+/* =====================================
+   PAGE HEADER
+===================================== */
+
+.page-header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    color: #64748b;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* =====================================
+   Staff and Visitor PANEL GRID
+===================================== */
+
+.org-details,
+.visitor-details {
+    width: 95%;
+    max-width: 1800px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
+    gap: 25px;
+
+    padding-bottom: 40px;
+}
+
+/* =====================================
+   CARDS
+===================================== */
+
+.edit-org-details,
+.edit-rules,
+.view-visitors,
+.edit-visitor {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+    transition: all .3s ease;
+}
+
+.edit-org-details:hover,
+.edit-rules:hover,
+.view-visitors:hover,
+.edit-visitor:hover {
+    transform: translateY(-4px);
+}
+
+.view-visitors {
+    max-height: 700px;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+}
+
+/* =====================================
+   HEADINGS
+===================================== */
+
+h2 {
+    font-size: 1.4rem;
+    color: #0f172a;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+/* =====================================
+   FORM GROUPS
+===================================== */
+
+.editorg-form-group,
+.newrule-form-group,
+.edit-visitor-form-group {
+    margin-bottom: 20px;
+}
+
+/* =====================================
+   LABELS
+===================================== */
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #475569;
+}
+
+/* =====================================
+   INPUTS
+===================================== */
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: all .3s ease;
+    background: white;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* =====================================
+   FORM ROWS
+===================================== */
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .edit-visitor-form-group {
+    flex: 1;
+}
+
+/* =====================================
+   BUTTONS
+===================================== */
+
+.submit-edit-org-btn,
+.edit-new-rule-btn,
+.filter-visitors,
+.edit-visitor-btn,
+.dropbtn,
+.filter-visitors
+/*
+.filter-visitors-by-visiting,
+.filter-visitors-by-today,
+.filter-visitors-by-week,
+.filter-visitors-by-month,
+.filter-visitors-by-6month,
+.filter-visitors-by-year,
+.filter-visitors-by-6year*/ {
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 14px 24px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.submit-edit-org-btn,
+.edit-new-rule-btn,
+.filter-visitors,
+.edit-visitor-btn,
+.dropbtn,
+.filter-visitors
+/*
+.filter-visitors-by-today,
+.filter-visitors-by-week,
+.filter-visitors-by-month,
+.filter-visitors-by-6month,
+.filter-visitors-by-year,
+.filter-visitors-by-6year*/ {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.submit-edit-org-btn:hover,
+.edit-new-rule-btn:hover,
+.filter-visitors:hover,
+.edit-visitor-btn:hover,
+.dropbtn:hover,
+.dropbtn:focus,
+.filter-visitors:hover
+/*
+.filter-visitors-by-today:hover,
+.filter-visitors-by-week:hover,
+.filter-visitors-by-month:hover,
+.filter-visitors-by-6month:hover,
+.filter-visitors-by-year:hover,
+.filter-visitors-by-6year:hover*/ {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.submit-edit-org-btn:active,
+.edit-new-rule-btn:active,
+.filter-visitors:active,
+.edit-visitor-btn:active,
+.dropbtn:active,
+.filter-visitors:active
+/*
+.filter-visitors-by-today:active,
+.filter-visitors-by-week:active,
+.filter-visitors-by-month:active,
+.filter-visitors-by-6month:active,
+.filter-visitors-by-year:active,
+.filter-visitors-by-6year:active*/ {
+    transform: scale(0.97);
+}
+
+.loader {
+    display: none;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid blue;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    animation: spin 1s linear infinite;
+    margin-left: 8px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading {
+    background-color: #000000;
+    pointer-events: none;
+}
+
+/* =====================================
+   Toggle Light/Dark
+===================================== */
+
+.theme-switch {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+    width: 60px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.slider::before {
+    content: "🌙";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 4px;
+    top: 4px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+input:checked + .slider {
+    background: #06b6d4;
+}
+
+input:checked + .slider::before {
+    transform: translateX(28px);
+    content: "☀️";
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+    margin-top: 40px;
+    background: #0f172a;
+    text-align: center;
+    padding: 30px;
+}
+
+.back-to-top {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.back-to-top:hover {
+    color: #60a5fa;
+}
+
+/* =====================================
+   SCROLLBAR
+===================================== */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e2e8f0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #94a3b8;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
+
+
+/* 
+VISITOR DISPLAY
+Dropdown Content (Hidden by Default) 
+*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 240px;
+    padding: 12px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    box-shadow:
+        0 14 0 10px 25px rgba(15, 23, 42, 0.12),
+        0 15 0 4px 10px rgba(15, 23, 42, 0.06);
+    z-index: 1000;
+}
+
+.dropdown-content.show {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/*
+Table styling
+*/
+.view-visitors-header {
+    position: sticky;
+    top: -25;
+    background-color: white;
+    z-index: 100;
+}
+
+
+.visitor-table {
+    border-collapse: collapse;
+    /* Merges cell borders into a clean grid */
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    /* Keeps border-radius visible */
+}
+
+/* Header Styling */
+.visitor-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+/* Padding and Spacing */
+.visitor-table th,
+.visitor-table td {
+    padding: 12px 15px;
+}
+
+/* Zebra Striping for Rows */
+.visitor-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+/* Bottom Border for Content Rows */
+.visitor-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+/* Hover Effect */
+.visitor-table tbody tr:hover {
+    background-color: #eafaf7;
+    cursor: pointer;
+}
+
+/* Highlight Last Row */
+.visitor-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+/* =====================================
+   Success/Error Message
+===================================== */
+.message-error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff0000;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.message-success {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #22bb33;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.message-info {
+    background: #dee3e7;
+    border-left: 4px solid #d47100;
+    border-right: 4px solid #d47100;
+    color: #323130;
+
+    margin: 0 auto;
+    width: 280px;
+    padding: 6px 9px;
+    border-radius: 8px;
+
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-align: center;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .08);
+}

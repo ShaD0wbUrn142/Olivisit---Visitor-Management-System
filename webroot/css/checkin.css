@@ -1,0 +1,444 @@
+/* =====================================
+   GLOBAL SETTINGS
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f1f5f9;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #334155;
+    line-height: 1.6;
+}
+
+/* =====================================
+   NAVBAR
+===================================== */
+
+.navbar {
+    background: #0f172a;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+    padding: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+
+.nav-link:hover {
+    color: #60a5fa;
+}
+
+/* =====================================
+   PAGE HEADER
+===================================== */
+
+.page-header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    color: #64748b;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* =====================================
+   SIgn PANEL
+===================================== */
+
+.sign-in-container {
+    width: 95%;
+    max-width: 900px;
+    margin: 40px auto;
+
+    gap: 25px;
+    padding-bottom: 40px;
+}
+
+.welcome-page {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+/* =====================================
+   HEADINGS
+===================================== */
+
+h2 {
+    font-size: 1.4rem;
+    color: #0f172a;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.heading {
+    background: #4d557c;
+    border-radius: 18px 18px 0 0;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* =====================================
+   LABELS
+===================================== */
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #475569;
+}
+
+/* =====================================
+   INPUTS
+===================================== */
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: all .3s ease;
+    background: white;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* =====================================
+   CARDS
+===================================== */
+
+.sign-in-form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Visitor ID Section */
+.visitor-id {
+    margin-bottom: 3rem;
+}
+
+.visitor-id h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.visitor-id-box {
+    display: inline-block;
+    min-width: 220px;
+    padding: 1rem 1.5rem;
+
+    background: linear-gradient(135deg,
+            #2563eb,
+            #1d4ed8);
+
+    color: white;
+    border-radius: 12px;
+    font-size: 1.8rem;
+    font-weight: bold;
+
+    box-shadow: 0 8px 20px rgba(37, 99, 235, .25);
+}
+
+/* House Rules Section */
+.org-rules {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    background: white;
+
+    border-radius: 18px;
+    padding: 2rem;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+}
+
+.org-rules h2 {
+    text-align: center;
+    color: #0f172a;
+    border: none;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.rules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.rule {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    min-height: 180px;
+}
+
+.rule h3 {
+    margin-bottom: 0.75rem;
+    color: #2563eb;
+    font-size: 1.2rem;
+}
+
+.rule p {
+    margin: 0;
+    color: #475569;
+    font-size: 1rem;
+}
+
+
+/* =====================================
+   FORM ROWS
+===================================== */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.button-row {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+/* =====================================
+   BUTTONS
+===================================== */
+
+.submit-sign-in,
+.capture-photo {
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 14px 24px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.cancel-sign-in {
+    background: #eb2525;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 14px 24px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.cancel-sign-in,
+.submit-sign-in,
+.capture-photo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.submit-sign-in:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.cancel-sign-in:hover {
+    background: #be1e1e;
+    transform: translateY(-2px);
+}
+
+.cancel-sign-in:active,
+.submit-sign-in:active {
+    transform: scale(0.97);
+}
+
+.loader {
+    display: none;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid blue;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    animation: spin 1s linear infinite;
+    margin-left: 8px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading {
+    background-color: #000000;
+    pointer-events: none;
+}
+
+/* =====================================
+   Video
+===================================== */
+
+video {
+    border: 2px solid #333;
+    background: #000;
+}
+
+.camera-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* Centers vertically on the screen */
+}
+
+#video, #photo {
+    width: 320px;
+    /* Makes the video smaller (half of 640) */
+    height: 240px;
+    /* Maintains 4:3 aspect ratio */
+    object-fit: cover;
+    margin-bottom: 10px;
+    /* Space between video and button */
+    background-color: #f0f0f0;
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+    margin-top: 40px;
+    background: #0f172a;
+    text-align: center;
+    padding: 30px;
+}
+
+.back-to-top {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.back-to-top:hover {
+    color: #60a5fa;
+}
+
+/* =====================================
+   SCROLLBAR
+===================================== */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e2e8f0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #94a3b8;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
+
+/* =====================================
+   Success/Error Message
+===================================== */
+.message-error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff0000;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.message-success {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #22bb33;
+    padding: 15px;
+    border-radius: 4px;
+}

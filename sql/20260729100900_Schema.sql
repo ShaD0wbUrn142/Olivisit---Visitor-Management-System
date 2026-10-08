@@ -1,0 +1,3 @@
+CREATE SCHEMA IF NOT EXISTS olivisit;
+
+--DROP SCHEMA IF EXISTS olivisit;
