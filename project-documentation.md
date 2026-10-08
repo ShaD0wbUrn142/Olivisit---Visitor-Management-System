@@ -1,4 +1,4 @@
-<img width="1770" height="53" alt="image" src="https://github.com/user-attachments/assets/8e82b3b2-3c32-4767-ad75-da7b178de77b" /># Project Documentation
+# Project Documentation
 
 ## Functional requirements
 - Allow visitors to add and submit information about their visit to a database which then stores it
@@ -42,7 +42,16 @@ TODO - need to get the updated one from supervisior, my uni account is locked no
 <img width="843" height="687" alt="image" src="https://github.com/user-attachments/assets/5bfd6838-6ca2-48fa-9267-b0249b86a0e7" />
 
 ## Screenshot Examples of VMS
-TODO
+<img width="1280" height="636" alt="image" src="https://github.com/user-attachments/assets/916a0837-da91-4f97-83e0-3e0d01ed279f" />
+<img width="1280" height="636" alt="image" src="https://github.com/user-attachments/assets/a8eb4f12-c296-4256-9202-d0f51a5dd2f2" />
+<img width="1280" height="410" alt="image" src="https://github.com/user-attachments/assets/6823e690-bfc0-4c63-8731-1fd61a74bf0a" />
+<img width="1280" height="532" alt="image" src="https://github.com/user-attachments/assets/6c98f1dd-a322-489a-8457-f1bed49652fc" />
+<img width="1280" height="512" alt="image" src="https://github.com/user-attachments/assets/6361349a-1837-43b3-bbbb-6a91293f547e" />
+<img width="1280" height="637" alt="image" src="https://github.com/user-attachments/assets/a5d58a58-91f8-4b72-9c40-c69a545b11e9" />
+<img width="1280" height="635" alt="image" src="https://github.com/user-attachments/assets/a7ca4742-5f23-45ec-aa97-666bc8f07093" />
+<img width="1280" height="635" alt="image" src="https://github.com/user-attachments/assets/3e09eef7-5b96-494e-a0e9-50bd622e21c7" />
+<img width="1280" height="637" alt="image" src="https://github.com/user-attachments/assets/f5b09a9e-6d03-40ef-ad7f-e81505123b9a" />
+
 
 ### Id Badge
 <img width="486" height="308" alt="badge" src="https://github.com/user-attachments/assets/a98411c2-7eec-4b85-95df-c66161ebd090" />
